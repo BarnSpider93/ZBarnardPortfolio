@@ -101,10 +101,18 @@ section {
 h2{
   text-align: center;
   padding-bottom: 30px;
+  margin: 20px auto;
+  background: rgba(255, 241, 214, .8);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width:fit-content;
 }
 
 h3 {
   text-align: center;
+  padding-bottom: 20px;
+  
 }
 
 p {
@@ -201,13 +209,21 @@ a:focus {
   margin-bottom: 20px;
 }
 
-.projects-section img {
+.projects-section img, .projects-section a {
   display: flex;
   max-width: 50%
 }
 
 .logo img {
   border-radius: 30%;
+}
+
+#website-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* Responsive */
