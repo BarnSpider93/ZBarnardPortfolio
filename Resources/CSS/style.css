@@ -18,7 +18,6 @@ body {
   font-family: "Titillium Web", sans-serif;
   color: white;
   background-image: url("../Images/Banners/web-background2.png");
-
   background-blend-mode: lighten;
   background-size: cover;
   background-position: center;
@@ -26,10 +25,14 @@ body {
   padding-bottom: 30px;
 }
 
+main {
+  padding: 50px;
+}
+
 /* Header styles */
 header {
   max-width: 100%;
-  height: 100px;
+  height: 120px;
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
@@ -100,8 +103,8 @@ nav a:active {
 
 /* Main content */
 section {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: fit-content;
+  margin: 30px auto;
   background: rgba(91, 122, 139, 0.8);
   padding: 40px 50px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -237,12 +240,16 @@ a {
 .project {
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   text-align: center;
-  max-width: 150px;
+  max-width: 230px;
   padding: 5px;
   border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  max-width: 300px;
   transition: all 0.3s ease;
 }
 
@@ -279,8 +286,12 @@ a {
   gap: 20px;
 } 
 
-.project:hover {
-  max-width: 180px;
+.website {
+  max-width: 400px;
+}
+
+.website:hover {
+  max-width: 500px;
   transition: all 0.3s ease;
 }
 
