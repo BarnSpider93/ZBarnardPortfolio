@@ -48,24 +48,6 @@ header h1 {
   letter-spacing: 0.03em;
 }
 
-h1 a {
-  color: inherit;        
-  text-decoration: none; 
-  padding: 1rem;
-}
-
-h1 a:hover,
-h1 a:focus {
-  font-size: 2.05rem;
-  transition: all 0.25s ease;
-}
-
-h1 a:active {
-  font-size: 1.95rem;
-  transition: all 0.25s ease;
-}
-
-
 nav a {
   color: #fcfcfc;
   text-decoration: underline;
@@ -115,7 +97,30 @@ section {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-#about img.selfie {
+p {
+  font-size: 1.125rem;
+  color: #000000;
+  text-align: center;
+  line-height: 1.65;
+}
+
+a {
+  color: #015958;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.25s ease;
+}
+
+a:hover,
+a:focus {
+  border-color: #015958;
+  outline: none;
+}
+
+/* Home Page/About/Skills Section */
+
+.selfie {
   display: block;
   max-width: 500px;
   width: 100%;
@@ -124,47 +129,29 @@ section {
   transition: transform 0.3s ease;
 }
 
-#about img.selfie:hover,
-#about img.selfie:focus {
+.selfie:hover,
+.selfie:focus {
   transform: scale(1.05);
   outline: none;
 }
 
-#about p {
-  font-size: 1.125rem;
-  color: #000000;
-  text-align: center;
-  line-height: 1.65;
-}
 
-#about a {
-  color: #015958;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.25s ease;
-}
-
-#about a:hover,
-#about a:focus {
-  border-color: #015958
-;  outline: none;
-}
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header {
     flex-direction: column;
     align-items: center;
+    height: 110px;
   }
 
   nav {
     margin-top: 15px;
+    padding-bottom: 20px;
   }
 
   nav a {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px;
   }
 
   main {
@@ -172,8 +159,8 @@ section {
     margin: 0 10px;
   }
 
-  #about img.selfie {
-    max-width: 140px;
+  .selfie {
+    max-width: 65%;
     margin-bottom: 20px;
   }
 }
