@@ -9,15 +9,20 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Titillium Web", sans-serif;
-  background-image: url("../Images/Banners/memphis-clouds.jpg");
-  background-color: rgba(29, 34, 66, 0.9);
+  color: white;
+  background-image: url("../Images/Banners/web-background2.png");
+
   background-blend-mode: lighten;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  line-height: 1.1;
   padding-bottom: 30px;
 }
 
@@ -31,7 +36,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: rgba(43, 52, 103, 0.7)
+  background: rgba(36, 68, 87, 0.8);
+  font-family: "Mozilla Headline", sans-serif;
 
 }
 
@@ -41,16 +47,16 @@ header .header-logo {
 }
 
 header img {
-  max-height: 80px;
+  max-height: 100px;
   height: auto;
-  border-radius: 50%;
+  
   margin-right: 20px;
 }
 
-header h1 {
+h1 {
   font-weight: 700;
   font-size: 3rem;
-  color: #fcfcfc;
+  color: white;
   letter-spacing: 0.03em;
   margin: 0;
 }
@@ -61,8 +67,7 @@ nav a {
   font-weight: 600;
   font-size: 2rem;
   margin-left: 30px;
-  padding: 6px 8px;
-  border-radius: 6px;
+  padding: 10px;
   transition: all 0.25s ease;
 }
 
@@ -73,22 +78,21 @@ nav a:visited {
   margin-left: 30px;
   font-size: 1.5rem;
   padding: 6px 8px;
-  border-radius: 6px;
   transition: all 0.25s ease;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #005a70;
-  background-color: rgba(255, 241, 214, .8);
+  color: rgba(36, 68, 87, 1);
+  background-color: rgb(247, 247, 185);
   outline: none;
   font-size: 2.15rem;
   transition: all 0.25s ease;
 }
 
 nav a:active {
-  color: #005a70;
-  background-color: rgba(255, 241, 214, .8);
+  color: rgba(36, 68, 87, 1);
+  background-color: rgb(247, 247, 185);
   outline: none;
   font-size: 1.9rem;
   transition: all 0.25s ease;
@@ -96,51 +100,46 @@ nav a:active {
 
 /* Main content */
 section {
-  max-width: 70vw;
+  max-width: 800px;
   margin: 20px auto;
-  background: rgba(255, 241, 214, .8);
+  background: rgba(91, 122, 139, 0.8);
   padding: 40px 50px;
-  border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 
 h2{
+  font-size: 2.5rem;
   text-align: center;
   padding-bottom: 30px;
   margin: 20px auto;
-  background: rgba(255, 241, 214, .8);
+  background: rgba(91, 122, 139, 0.8);
   padding: 20px 30px;
-  border-radius: 12px;
+  
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   max-width:fit-content;
 }
 
 h3 {
+  font-size: 2rem;;
   text-align: center;
   padding-bottom: 20px;
   
 }
 
 p {
-  font-size: 1.125rem;
-  color: #000000;
+  font-size: 1rem;
+  color: #ffffff;
   text-align: center;
-  line-height: 1.65;
+  line-height: 1.15;
 }
 
 a {
-  color: #015958;
+  color: aqua;
   font-weight: 700;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border-color 0.25s ease;
-}
-
-a:hover,
-a:focus {
-  border-color: #015958;
-  outline: none;
 }
 
 /* Home Page/About/Skills Section */
@@ -170,6 +169,7 @@ a:focus {
 
 .about-section p {
   max-width: 80%;
+  text-align: justify;
 }
 
 #skills ul {
@@ -238,14 +238,22 @@ a:focus {
 .project {
   display: flex;
   flex-direction: column;
+  
   align-items: center;
   text-align: center;
-  max-width: 30%;
-  margin-bottom: 20px;
-  background-color: white;
-  padding: 15px;
-  border-radius: 10px;
+  max-width: 150px;
+  padding: 5px;
+  border-radius: 2px;
   transition: all 0.3s ease;
+}
+
+.project p {
+  color: white;
+}
+
+.project a {
+  color:rgb(174, 255, 255);
+  text-decoration: underline;
 }
 
 .projects-section img {
@@ -272,15 +280,8 @@ a:focus {
   gap: 20px;
 } 
 
-.project a {
-  color: #005a70;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-
 .project:hover {
-  max-width: 32%;
+  max-width: 180px;
   transition: all 0.3s ease;
 }
 
