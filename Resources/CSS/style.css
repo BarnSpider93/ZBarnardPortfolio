@@ -36,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 20px;
   background-color: rgba(42, 66, 87, 0.9);
   
 }
@@ -89,12 +89,18 @@ nav a:active {
 
 /* Main content */
 section {
-  max-width: 700px;
+  max-width: 70vw;
   margin: 20px auto;
   background: rgba(255, 241, 214, .8);
   padding: 40px 50px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+h2{
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 p {
@@ -121,7 +127,7 @@ a:focus {
 /* Home Page/About/Skills Section */
 
 .selfie {
-  display: block;
+  display: flex;
   max-width: 500px;
   width: 100%;
   border-radius: 20%;
@@ -135,7 +141,41 @@ a:focus {
   outline: none;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.about-section p {
+  max-width: 80%;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#skills li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  text-align: center;
+          
+}
+
+#skills img {
+  max-height: 70px;
+  height: auto;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
 
 /* Responsive */
 @media (max-width: 650px) {
