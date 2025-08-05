@@ -9,11 +9,6 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url('../Images/Banners/background5.jpg');
@@ -24,7 +19,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   line-height: 1.6;
-  padding: 0px;
+  padding-bottom: 30px;
 }
 
 /* Header styles */
@@ -238,6 +233,7 @@ a:focus {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .projects-section img {
@@ -270,10 +266,13 @@ a:focus {
   font-weight: 600;
 }
 
+
 .project:hover {
   max-width: 32%;
   transition: all 0.3s ease;
 }
+
+
 
 /* Responsive for Projects */
 @media (max-width: 600px) {
