@@ -367,14 +367,7 @@ a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.website img {
-  transition: all 0.3s ease;
-}
 
-.website img:hover {
-  transform: scale(1.25);
-  transition: all 0.3s ease;
-}
 
 /* Responsive for Projects */
 @media (max-width: 800px) {
